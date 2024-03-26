@@ -1,0 +1,49 @@
+.popular-jobs-section {
+    position: relative;
+    margin: 70px 0;
+    height: 400px;
+    overflow: hidden;
+    font-size: 40px;
+}
+.centered{
+    /* display: flex; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.job-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.job-card {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform .1s ease; /* Adjust transition duration for slower movement */
+    position: absolute;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 1s ease;
+}
+
+.job-card:hover {
+    transform: scale(1.1);
+    outline: 2px solid red; /* Red outline on hover */
+    opacity: 1; /* Full opacity on hover */
+     z-index: 1;
+     
+
+
+}
+
+.job-card p {
+    margin: 0;
+    font-size: 16px;
+    
+}
